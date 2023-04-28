@@ -151,11 +151,12 @@
     mix-blend-mode: normal;
 
 }
-
-.background-index {
+.index-total{
     background: linear-gradient(0deg, rgba(219, 216, 187, 0.47), rgba(219, 216, 187, 0.47)), url(../assets/imagenes/foto-index.jpg);
     background-size: cover;
     background-repeat: no-repeat;
+}
+.background-index {
     height: 701px;
 
 }
@@ -367,7 +368,11 @@
 /*FOOTER*/
 
 .background-footer {
-    background-color: rgba(89, 87, 66, 0.78);
+    background-color: transparent;
+}
+
+.background-footer-resto {
+background-color: rgba(89, 87, 66, 0.78);
 }
 
 .iconos-copa {
