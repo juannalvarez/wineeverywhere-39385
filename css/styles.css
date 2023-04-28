@@ -1,0 +1,426 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: 0;
+    text-decoration: none;
+}
+
+
+/*HEADER*/
+
+.background-header {
+    background: linear-gradient(0deg, rgba(131, 40, 78, 0.78), rgba(131, 40, 78, 0.78)), url(../assets/imagenes/foto-header.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 300px;
+}
+
+.titulo-h1 {
+    position: absolute;
+    width: 935px;
+    height: 96px;
+    left: 300px;
+    top: 68px;
+    font-family: 'Lexend Tera', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 64px;
+    line-height: 80px;
+    color: #FFFFFF;
+}
+
+.navbar {
+    box-shadow: none;
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    justify-content: space-around;
+    font-family: 'Lexend', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 560px;
+    text-align: center;
+}
+
+.navbar li a {
+    text-decoration: none;
+    color: #FFFFFF;
+}
+
+
+/* TITULOS H3*/
+
+.nosotros-titulo {
+    position: absolute;
+    width: 180px;
+    height: 30px;
+    left: 1000px;
+    top: 450px;
+    font-family: 'Lexend';
+    font-style: normal;
+    font-weight: 453;
+    font-size: 25px;
+    line-height: 31px;
+    text-align: center;
+    text-decoration-line: underline;
+    color: rgba(21, 15, 15, 0.61);
+    mix-blend-mode: normal;
+}
+
+.catalogo-titulo {
+    position: absolute;
+    width: 180px;
+    height: 30px;
+    left: 701px;
+    top: 450px;
+    font-family: 'Lexend';
+    font-style: normal;
+    font-weight: 453;
+    font-size: 25px;
+    line-height: 31px;
+    text-align: center;
+    text-decoration-line: underline;
+    color: rgba(21, 15, 15, 0.61);
+    mix-blend-mode: normal;
+}
+
+.servicios-titulo {
+    position: absolute;
+    width: 180px;
+    height: 30px;
+    left: 1000px;
+    top: 450px;
+    font-family: 'Lexend';
+    font-style: normal;
+    font-weight: 453;
+    font-size: 25px;
+    line-height: 31px;
+    text-align: center;
+    text-decoration-line: underline;
+    color: rgba(21, 15, 15, 0.61);
+    mix-blend-mode: normal;
+}
+
+.contacto-titulo {
+    position: absolute;
+    width: 180px;
+    height: 30px;
+    left: 160px;
+    top: 450px;
+    font-family: 'Lexend';
+    font-style: normal;
+    font-weight: 453;
+    font-size: 25px;
+    line-height: 31px;
+    text-align: center;
+    text-decoration-line: underline;
+    color: rgba(21, 15, 15, 0.61);
+    mix-blend-mode: normal;
+}
+
+/* PARRAFOS */
+
+.nosotros-parrafo {
+    position: absolute;
+    width: 595px;
+    height: 599px;
+    left: 800px;
+    top: 500px;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 27px;
+    color: rgba(21, 15, 15, 0.61);
+    mix-blend-mode: normal;
+}
+
+.servicios-parrafo {
+    position: absolute;
+    width: 595px;
+    height: 599px;
+    left: 800px;
+    top: 500px;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 27px;
+    color: rgba(21, 15, 15, 0.61);
+    mix-blend-mode: normal;
+
+}
+
+.background-index {
+    background: linear-gradient(0deg, rgba(219, 216, 187, 0.47), rgba(219, 216, 187, 0.47)), url(../assets/imagenes/foto-index.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 701px;
+
+}
+
+.background-main {
+    background-color: rgba(219, 216, 187, 0.47);
+
+}
+
+.background-catalogo {
+    background-color: rgba(219, 216, 187, 0.47);
+    background-size: cover;
+    height: 701px;
+}
+
+.busqueda {
+    background: none;
+    border: 2px solid #595742;
+    position: absolute;
+    width: 250px;
+    height: 30px;
+    left: 1220px;
+    top: 350px;
+}
+
+/* FOTOS */
+
+.foto-nosotros {
+    background: linear-gradient(0deg, rgba(219, 216, 187, 0.47), rgba(219, 216, 187, 0.47)), url(../assets/imagenes/foto-nosotros.jpg);
+    background-repeat: no-repeat;
+    position: relative;
+    background-size: cover;
+    width: 468px;
+    height: 701px;
+    left: 150px;
+    top: 0px;
+}
+
+.foto-contacto {
+    background: linear-gradient(0deg, rgba(219, 216, 187, 0.47), rgba(219, 216, 187, 0.47)), url(../assets/imagenes/foto-contacto2.jpg);
+    background-repeat: no-repeat;
+    position: relative;
+    background-size: cover;
+    width: 468px;
+    height: 701px;
+    left: 150px;
+    top: 0px;
+}
+
+.foto-servicios {
+    background: linear-gradient(0deg, rgba(219, 216, 187, 0.47), rgba(219, 216, 187, 0.47)), url(../assets/imagenes/foto-servicios.jpg);
+    background-repeat: no-repeat;
+    position: relative;
+    background-size: cover;
+    width: 468px;
+    height: 701px;
+    left: 150px;
+    top: 0px;
+}
+
+/* CARDS */
+
+.card-1 {
+    font-family: 'Lexend';
+    font-style: normal;
+    font-weight: 453;
+    font-size: 16px;
+    position: absolute;
+    width: 176px;
+    height: 161px;
+    left: 286px;
+    top: 520px;
+    border: 2px solid #595742;
+    background: #FFFFFF;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    gap: 1px;
+    box-shadow: 0px 5px 5px rgba(131, 40, 78);
+}
+
+.card-2 {
+    font-family: 'Lexend';
+    font-style: normal;
+    font-weight: 453;
+    font-size: 16px;
+    position: absolute;
+    width: 176px;
+    height: 161px;
+    left: 554px;
+    top: 520px;
+    border: 2px solid #595742;
+    background: #FFFFFF;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    gap: 1px;
+    box-shadow: 0px 5px 5px rgba(131, 40, 78);
+}
+
+.card-3 {
+    font-family: 'Lexend';
+    font-style: normal;
+    font-weight: 453;
+    font-size: 16px;
+    position: absolute;
+    width: 176px;
+    height: 161px;
+    left: 822px;
+    top: 520px;
+    border: 2px solid #595742;
+    background: #FFFFFF;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    gap: 1px;
+    box-shadow: 0px 5px 5px rgba(131, 40, 78);
+}
+
+.card-4 {
+    font-family: 'Lexend';
+    font-style: normal;
+    font-weight: 453;
+    font-size: 16px;
+    position: absolute;
+    width: 176px;
+    height: 161px;
+    left: 1090px;
+    top: 520px;
+    border: 2px solid #595742;
+    background: #FFFFFF;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    gap: 1px;
+    box-shadow: 0px 5px 5px rgba(131, 40, 78);
+}
+
+
+/*FORMULARIOS-CONTACTO*/
+
+.foto-contacto {
+    position: relative;
+    width: 468px;
+    height: 701px;
+    left: 950px;
+    top: 0px;
+}
+
+
+.formulario-contacto {
+    position: absolute;
+    width: 700px;
+    height: 350px;
+    left: 180px;
+    top: 500px;
+    border: 2px solid #595742
+}
+
+.contacto-nombre {
+    position: absolute;
+    width: 671px;
+    height: 36px;
+    left: 10px;
+    top: 25px;
+    border: 2px solid #595742
+}
+
+.contacto-apellido {
+    position: absolute;
+    width: 671px;
+    height: 36px;
+    left: 10px;
+    top: 75px;
+    border: 2px solid #595742
+}
+
+.contacto-email {
+    position: absolute;
+    width: 671px;
+    height: 36px;
+    left: 10px;
+    top: 125px;
+    border: 2px solid #595742
+}
+
+.contacto-mensaje {
+    position: absolute;
+    width: 671px;
+    height: 100px;
+    left: 10px;
+    top: 175px;
+    border: 2px solid #595742
+}
+
+.contacto-enviar {
+    position: absolute;
+    width: 671px;
+    height: 36px;
+    left: 195px;
+    top: 800px;
+}
+
+
+/*FOOTER*/
+
+.background-footer {
+    background-color: rgba(89, 87, 66, 0.78);
+}
+
+.iconos-copa {
+    position: absolute;
+    left: 1420px;
+    top: 1010px;
+}
+
+.iconos-1 {
+    padding: 25px 50px;
+    color: #FFFFFF;
+    text-decoration: none;
+    font-family: 'Lexend';
+    font-style: normal;
+    line-height: 25px;
+}
+
+.links {
+    text-decoration: none;
+    color: #FFFFFF;
+}
+
+.iconos-2 {
+    position: absolute;
+    width: 285px;
+    height: 25px;
+    left: 494px;
+    top: 1051px;
+    font-family: 'Lexend';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+
+    color: #FFFFFF;
+}
+
+.iconos-2 {
+    text-decoration: none;
+    color: #FFFFFF;
+}
+
+
+.iconos-3 {
+    position: absolute;
+    width: 285px;
+    height: 25px;
+    left: 874px;
+    top: 1060px;
+    font-family: 'Lexend';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+    color: #FFFFFF;
+}
