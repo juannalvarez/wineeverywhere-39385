@@ -1,12 +1,64 @@
 * {
     margin: 0;
     padding: 0;
-    box-sizing: 0;
+    box-sizing: border-box;
     text-decoration: none;
 }
 
+.hero{
+    width: 100%;
+    height: 100vh;
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: auto 65% 10%;
+    grid-template-areas:
+        "header"
+        "main"
+        "footer"
+    ;
+    
+}
 
-/*HEADER*/
+header{
+    grid-area: header;
+    background: linear-gradient(0deg, rgba(131, 40, 78, 0.78), rgba(131, 40, 78, 0.78)), url(../assets/imagenes/foto-header.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.header-menu{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.navbar{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    list-style: none;
+    font-family: 'Lexend', sans-serif;
+    font-style: normal;
+    gap: 10px;
+
+}
+
+.titulo-h1{
+    font-family: 'Lexend Tera', sans-serif;
+    font-size: 24px;
+    line-height: 40px;
+    color: #FFFFFF;
+}
+
+.navbar li a {
+    text-decoration: none;
+    color: #FFFFFF;
+    
+}
+
+/* CSS VIEJO DESKTOP
+
+-----------------------------------HEADER-----------------------------------
 
 .background-header {
     background: linear-gradient(0deg, rgba(131, 40, 78, 0.78), rgba(131, 40, 78, 0.78)), url(../assets/imagenes/foto-header.jpg);
@@ -49,7 +101,7 @@
 }
 
 
-/* TITULOS H3*/
+-----------------------------------TITULOS H3-----------------------------------
 
 .nosotros-titulo {
     position: absolute;
@@ -119,7 +171,7 @@
     mix-blend-mode: normal;
 }
 
-/* PARRAFOS */
+-----------------------------------PARRAFOS-----------------------------------
 
 .nosotros-parrafo {
     position: absolute;
@@ -151,11 +203,13 @@
     mix-blend-mode: normal;
 
 }
-.index-total{
+
+.index-total {
     background: linear-gradient(0deg, rgba(219, 216, 187, 0.47), rgba(219, 216, 187, 0.47)), url(../assets/imagenes/foto-index.jpg);
     background-size: cover;
     background-repeat: no-repeat;
 }
+
 .background-index {
     height: 701px;
 
@@ -182,7 +236,7 @@
     top: 350px;
 }
 
-/* FOTOS */
+-----------------------------------FOTOS-----------------------------------
 
 .foto-nosotros {
     background: linear-gradient(0deg, rgba(219, 216, 187, 0.47), rgba(219, 216, 187, 0.47)), url(../assets/imagenes/foto-nosotros.jpg);
@@ -217,7 +271,7 @@
     top: 0px;
 }
 
-/* CARDS */
+-----------------------------------CARDS-----------------------------------
 
 .card-1 {
     font-family: 'Lexend';
@@ -300,7 +354,7 @@
 }
 
 
-/*FORMULARIOS-CONTACTO*/
+-----------------------------------FORMULARIOS-CONTACTO-----------------------------------
 
 .foto-contacto {
     position: relative;
@@ -365,14 +419,20 @@
 }
 
 
-/*FOOTER*/
+-----------------------------------FOOTER-----------------------------------
 
 .background-footer {
     background-color: transparent;
+    display: grid;
 }
 
 .background-footer-resto {
-background-color: rgba(89, 87, 66, 0.78);
+    display: grid;
+    grid-template-columns: 200px 200px 200px;
+    grid-template-rows: auto;
+    background-color: rgba(89, 87, 66, 0.78);
+    align-content: center;
+    justify-content: space-between;
 }
 
 .iconos-copa {
@@ -428,4 +488,4 @@ background-color: rgba(89, 87, 66, 0.78);
     font-size: 16px;
     line-height: 20px;
     color: #FFFFFF;
-}
+} */
