@@ -10,6 +10,8 @@
     <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@200&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Lexend+Tera:wght@800&family=Lexend:wght@200&display=swap"
         rel="stylesheet">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
 </head>
 
 <body>
@@ -17,8 +19,8 @@
         <header>
             <div class="header-menu">
                 <h1 class="titulo-h1">WINE EVERYWHERE</h1>
-                <nav>
-                    <ul class="navbar">
+                <nav class="main-navbar">
+                    <ul id="navbar" class="navbar">
                         <li><a href="#">HOME</a></li>
                         <li><a href="./pages/nosotros.html">NOSOTROS</a></li>
                         <li><a href="./pages/catalogo.html">CATÁLOGO</a></li>
@@ -28,33 +30,30 @@
                 </nav>
             </div>
         </header>
-        <main class="background-index">
-            <div>
-                <form>
+        <main>
+            <div class="busqueda">
+                <form action="">
                     <input type="search" placeholder="Búsqueda" class="busqueda">
             </div>
         </main>
-        <footer class="background-footer">
-            <div class="iconos-1">
-                <img src="./assets/imagenes/logo-telefono.png" width="20px">
-                <p>4378-8599</p>
-                <img src="./assets/imagenes/logo-mail.png" width="20px">
-                <a href="vinos.everywhere@gmail.com" target="_blank" class="links">vinos.everywhere@gmail.com</a>
-            </div>
-            <div class="iconos-2">
-                <img src="./assets/imagenes/logo-whatsapp.png" width="20px">
-                <a href="https://wa.me/1155550122" target="_blank" class="links">(+54) 9 11 5555-0122</a>
-                <br>
-                <img src="./assets/imagenes/logo-instagram.png" width="20px">
-                <a href="https://www.instagram.com/" target="_blank" class="links">vinos.everywhere</a>
-            </div>
-            <div class="iconos-3">
-                <img src="./assets/imagenes/logo-location.png" width="20px">
-                <p>Buenos Aires, Capital Federal</p>
-            </div>
-            <div class="iconos-copa">
-                <img src="./assets/imagenes/logo-vino.png" width="85xp">
-            </div>
+        <footer>
+            <div class="footer-flex">
+                <i class='bx bxs-phone' style='color:#DBD8BB'></i>
+                <p class="p-footer">4378-8599</p>
+                <a href=""><i class='bx bxs-envelope' style='color:#DBD8BB'></i></a>
+                    <p class="p-footer">vinos.everywhere@gmail.com</p>
+                </a>
+                <a href="https://wa.me/1155550122" target="_blank"><i class='bx bxl-whatsapp'
+                        style='color:#DBD8BB'></i></a>
+                <p class="p-footer">(+54) 9 11 5555-0122</p>
+                <a href="https://www.instagram.com/" target="_blank"><i class='bx bxl-instagram-alt'
+                        style='color:#DBD8BB'></i></a>
+                <p class="p-footer">vinos.everywhere</p>
+                <i class='bx bxs-edit-location' style='color:#DBD8BB'></i>
+                <p class="p-footer">Buenos Aires, Capital Federal</p>
+                <div class="iconos-copa">
+                    <i class='bx bxs-wine' style='color:#DBD8BB'></i>
+                </div>
         </footer>
     </div>
 </body>
