@@ -54,7 +54,7 @@ header {
 
 /*--------------------------------MAIN-INDEX------------------------------*/
 
-main {
+.main-index {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(3, 135px);
@@ -81,9 +81,111 @@ main {
 }
 
 /*--------------------------------MAIN-NOSOTROS------------------------------*/
+.main-background {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(5, 81px);
+    background-color: rgba(219, 216, 187, 0.47);  
+    background-repeat: no-repeat;
+    position: relative;
+    background-size: cover;
+}
+.nosotros-section {
+    padding: 0px 10px 0px 10px;
+    grid-column: 2/5;
+    grid-row: 1/6;
+    align-self: center;
+    background-color: rgba(219, 216, 187, 0.818);  
+    backdrop-filter: blur(2px);
+    border: 1px solid #595742;
+
+}
+.nosotros-titulo {
+    font-family: 'Lexend';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 31px;
+    text-align: center;
+    text-decoration-line: underline;
+    color: rgba(21, 15, 15, 0.61);
+    mix-blend-mode: normal;
+}
+.nosotros-parrafo {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 10px;
+    line-height: 15px;
+    color: rgba(21, 15, 15, 0.61);
+    
+}
+/* .foto-nosotros {
+    background: linear-gradient(0deg, rgba(219, 216, 187, 0.47), rgba(219, 216, 187, 0.47)), url(../assets/imagenes/foto-nosotros.jpg);
+    background-repeat: no-repeat;
+    position: relative;
+    background-size: cover;
+    width: 250px;
+    height: 400px;
+} 
+*/
+
 /*--------------------------------MAIN-CATALOGO------------------------------*/
+
+
+
+
+
 /*--------------------------------MAIN-SERVICIOS------------------------------*/
+
+.main-background {
+    display: grid;
+    grid-template-columns: 35px 1fr 1fr 1fr 35px; 
+    grid-template-rows: repeat(5, 81px);
+    background-color: rgba(219, 216, 187, 0.47);  
+    background-repeat: no-repeat;
+    position: relative;
+    background-size: cover;
+}
+.servicios-section {
+    padding: 0px 10px 0px 10px;
+    grid-column: 2/5;
+    grid-row: 1/6;
+    align-self: center;
+    background-color: rgba(219, 216, 187, 0.818);  
+    backdrop-filter: blur(2px);
+    border: 1px solid #595742;
+}
+.servicios-titulo {
+    font-family: 'Lexend';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 31px;
+    text-align: center;
+    text-decoration-line: underline;
+    color: rgba(21, 15, 15, 0.61);
+    mix-blend-mode: normal;
+}
+.servicios-parrafo {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 10px;
+    line-height: 15px;
+    color: rgba(21, 15, 15, 0.61);
+    
+}
+.foto-servicios {
+display: none;
+}
+
 /*--------------------------------MAIN-CONTACTO------------------------------*/
+
+.foto-contacto {
+display: none;
+}
+
 
 
 /*--------------------------------FOOTER------------------------------*/
@@ -115,13 +217,19 @@ footer {
     display: none;
 }
 
-/*--------------------------------MEDIAQUERIES------------------------------*/
+/*--------------------------------MEDIAQUERIES 425PX------------------------------*/
 
 @media screen and (min-width:425px) {
     .busqueda input {
         width: 350px;
     }
+
+    .footer-flex {
+        gap: 45px;
+    }
 }
+
+/*--------------------------------MEDIAQUERIES 768PX------------------------------*/
 
 @media screen and (min-width: 768px) {
 
@@ -134,8 +242,9 @@ footer {
         font-weight: 400;
         font-size: 20px;
         text-align: center;
-        gap: 30px;
+        gap: 40px;
     }
+
     .header-menu {
         flex-direction: column;
         justify-content: space-around;
@@ -143,22 +252,27 @@ footer {
         padding-top: 35px;
         gap: 40px;
     }
+
     .titulo-h1 {
         font-size: 44px;
     }
+
     main {
         grid-template-rows: repeat(3, 150px);
     }
+
     .busqueda input {
         width: 450px;
     }
+
     .footer-flex {
         display: flex;
         flex-direction: row;
         align-items: center;
         justify-content: space-between;
-        gap: 15px;
+        gap: 5px;
     }
+
     .p-footer {
         display: block;
         color: #DBD8BB;
@@ -169,48 +283,84 @@ footer {
     }
 }
 
+/*--------------------------------MEDIAQUERIES 1024PX------------------------------*/
+
 @media screen and (min-width: 1024px) {
     header {
         height: 220px;
     }
+
     .navbar {
         font-weight: 800;
         font-size: 20px;
         text-align: center;
         gap: 100px;
     }
+
     .header-menu {
         padding-top: 90px;
         gap: 50px;
     }
+
     .titulo-h1 {
         font-size: 54px;
     }
+
+    .footer-flex {
+        gap: 15px;
+    }
+
+    .p-footer {
+        font-size: 13px;
+    }
 }
+
+/*--------------------------------MEDIAQUERIES 1440PX------------------------------*/
 
 @media screen and (min-width: 1440px) {
     header {
         height: 220px;
     }
+
     .navbar {
         font-weight: 800;
         font-size: 20px;
         text-align: center;
         gap: 170px;
     }
+
     .header-menu {
         padding-top: 90px;
         gap: 50px;
     }
+
     .titulo-h1 {
         font-size: 64px;
     }
+
     main {
         grid-template-rows: repeat(4, 150px);
     }
+
+    .busqueda {
+        grid-column: 3/4;
+        grid-row: 1/2;
+        margin-top: 20px;
+        align-items: start;
+        justify-self: center;
+    }
+
     footer {
         height: 85px;
         background-color: #75766A;
+    }
+
+    .footer-flex {
+        gap: 15px;
+    }
+
+    .p-footer {
+        font-size: 20px;
     }
 }
 
