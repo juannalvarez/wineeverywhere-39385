@@ -1,0 +1,45 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+.container{
+    background-color: rgba(219, 216, 187, 0.818);  
+}
+.card-1{
+    background-color: white;
+    border: 2px solid #50494995;
+    justify-self: center;
+}
+.card-2{
+    background-color: white;
+    border: 2px solid #50494995;
+    justify-self: center;
+}
+.card-3{
+    background-color: white;
+    border: 2px solid #50494995;
+    justify-self: center;
+}
+.card-4{
+    background-color: white;
+    border: 2px solid #50494995;
+    justify-self: center;
+}
+
+.card-body{
+    align-items: center;
+}
+
+.catalogo-titulo {
+    font-family: 'Lexend';
+    font-style: normal;
+    font-weight: 16px;
+    line-height: 31px;
+    text-align: center;
+    text-decoration-line: underline;
+    color: rgba(21, 15, 15, 0.61);
+    mix-blend-mode: normal;
+}
