@@ -1,25 +1,12 @@
 main {
     display: grid;
     grid-template-columns: repeat(1, 1fr);
-    grid-template-rows: repeat(3, 150px);
+    grid-template-rows: repeat(3, 165px);
     background: $bg-index;
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
 
-    // .busqueda {
-    //     grid-column: 1/4;
-    //     grid-row: 1/2;
-    //     margin-top: 20px;
-    //     align-items: start;
-    //     justify-self: center;
-
-    // input {
-    // background: $bg-busqueda;
-    // font-family: 'Lexend', sans-serif;
-    // font-weight: 600;
-    // width: 250px;
-    // border: 2px solid #595742
     .container-input {
         position: relative;
         padding-left: 35px;
@@ -28,6 +15,14 @@ main {
         grid-row: 1/2;
         align-self: start;
         align-items: center;
+
+        svg {
+            position: absolute;
+            top: 28px;
+            left: 45px;
+            transform: translate(0, 10%);
+        }
+
         input {
             width: 200px;
             padding: 10px 0px 10px 40px;
@@ -37,20 +32,12 @@ main {
             outline: none;
             opacity: 0.8;
             box-shadow: 0 0 5px rgb(116, 26, 64);
+        }
 
-            
-            svg {
-                position: absolute;
-                top: 50px;
-                left: 20px;
-                transform: translate(0, 10%);
+        input:focus {
+            opacity: 1;
+            width: 250px;
 
-
-                .input:focus {
-                    opacity: 1;
-                    width: 250px;
-                }
-            }
         }
     }
 

@@ -44,7 +44,7 @@
             &:active,
             &::after {
                 transform: scale(1.20);
-                background: linear-gradient(#b91d73c9 0%, #dd2a7bc9 50%, #f953c6c9 100%);
+                background-color: rgb(116, 26, 64);
                 border-radius: 25px;
                 transition: 0.01s;
             }
@@ -104,7 +104,7 @@
             }
 
             .active {
-                color: black;
+                color: rgba(219, 216, 187, 0.47);
 
             }
 
@@ -117,7 +117,7 @@
                 content: "";
                 height: 2px;
                 width: 100%;
-                background-image: linear-gradient(#b91d73 0%, #dd2a7b 50%, #f953c6 100%);
+                background-color: rgba(219, 216, 187, 0.47);
                 position: absolute;
                 right: 0px;
                 bottom: -5px;

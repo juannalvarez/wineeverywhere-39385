@@ -1,0 +1,38 @@
+.servicios-background{
+    display: grid;
+    grid-template-columns: 35px 1fr 1fr 1fr 35px;
+    grid-template-rows: repeat(5, 99px);
+    background-color: rgba(219, 216, 187, 0.47);
+    div{
+        display: none;
+    }
+    section{
+        padding: 0px 10px 0px 10px;
+        grid-column: 2/5;
+        grid-row: 1/6;
+        align-self: center;
+        background-color: rgba(219, 216, 187, 0.818);
+        backdrop-filter: blur(2px);
+        border: 2px solid #595742;
+        h2{
+            font-family: 'Lexend';
+            font-style: normal;
+            font-weight: 600;
+            font-weight: bold;
+            font-size: 20px;
+            line-height: 31px;
+            text-align: center;
+            text-decoration-line: underline;
+            color: rgba(21, 15, 15, 0.61);
+            mix-blend-mode: normal;
+        }
+        p{
+            font-family: $lexend;
+            font-style: normal;
+            font-weight: 600;
+            font-size: 12px;
+            line-height: 16px;
+            color: rgba(21, 15, 15, 0.61);
+        }
+    }
+}

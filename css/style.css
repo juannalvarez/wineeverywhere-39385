@@ -1,3 +1,5 @@
+@import url(https://fonts.googleapis.com/css2?family=Lexend+Tera:wght@800&family=Lexend:wght@200&display=swap);
+@import url(https://fonts.googleapis.com/css2?family=Lexend:wght@200&display=swap);
 * {
   margin: 0;
   padding: 0;
@@ -42,7 +44,7 @@
     padding-top: 18px; }
     .header .navigation .checkbtn:active, .header .navigation .checkbtn::after {
       transform: scale(1.2);
-      background: linear-gradient(#b91d73c9 0%, #dd2a7bc9 50%, #f953c6c9 100%);
+      background-color: #741a40;
       border-radius: 25px;
       transition: 0.01s; }
     .header .navigation .checkbtn i {
@@ -87,7 +89,7 @@
         .header .navigation ul li a:hover {
           color: rgba(219, 216, 187, 0.47); }
     .header .navigation ul .active {
-      color: black; }
+      color: rgba(219, 216, 187, 0.47); }
     .header .navigation ul .main-menu__link {
       position: relative;
       transition: all 0.4s; }
@@ -95,7 +97,7 @@
       content: "";
       height: 2px;
       width: 100%;
-      background-image: linear-gradient(#b91d73 0%, #dd2a7b 50%, #f953c6 100%);
+      background-color: rgba(219, 216, 187, 0.47);
       position: absolute;
       right: 0px;
       bottom: -5px;
@@ -127,12 +129,13 @@
       font-weight: 600; }
     .contacto-background .contacto-form .contacto-titulo {
       font-family: "Lexend", sans-serif;
-      font-size: 24px;
+      font-size: 20px;
       color: rgba(21, 15, 15, 0.61);
-      margin-bottom: 12px;
-      font-weight: bold;
-      display: block; }
+      font-weight: 600;
+      text-align: center;
+      text-decoration-line: underline; }
     .contacto-background .contacto-form form {
+      padding-top: 20px;
       display: flex;
       flex-direction: column; }
       .contacto-background .contacto-form form textarea {
@@ -170,10 +173,77 @@
         transform: scale(1.1);
         transition: transform 0.3s ease-in-out; }
 
+.nosotros-background {
+  display: grid;
+  grid-template-columns: 35px 1fr 1fr 1fr 35px;
+  grid-template-rows: repeat(5, 99px);
+  background-color: rgba(219, 216, 187, 0.47); }
+  .nosotros-background div {
+    display: none; }
+  .nosotros-background section {
+    padding: 0px 10px 0px 10px;
+    grid-column: 2/5;
+    grid-row: 1/6;
+    align-self: center;
+    background-color: rgba(219, 216, 187, 0.6);
+    backdrop-filter: blur(2px);
+    border: 2px solid #595742; }
+    .nosotros-background section h2 {
+      font-family: 'Lexend';
+      font-style: normal;
+      font-weight: 600;
+      font-size: 20px;
+      line-height: 31px;
+      text-align: center;
+      text-decoration-line: underline;
+      color: rgba(21, 15, 15, 0.61);
+      mix-blend-mode: normal; }
+    .nosotros-background section p {
+      font-family: "Lexend", sans-serif;
+      font-style: normal;
+      font-weight: 600;
+      font-size: 12px;
+      line-height: 16px;
+      color: rgba(21, 15, 15, 0.61); }
+
+.servicios-background {
+  display: grid;
+  grid-template-columns: 35px 1fr 1fr 1fr 35px;
+  grid-template-rows: repeat(5, 99px);
+  background-color: rgba(219, 216, 187, 0.47); }
+  .servicios-background div {
+    display: none; }
+  .servicios-background section {
+    padding: 0px 10px 0px 10px;
+    grid-column: 2/5;
+    grid-row: 1/6;
+    align-self: center;
+    background-color: rgba(219, 216, 187, 0.818);
+    backdrop-filter: blur(2px);
+    border: 2px solid #595742; }
+    .servicios-background section h2 {
+      font-family: 'Lexend';
+      font-style: normal;
+      font-weight: 600;
+      font-weight: bold;
+      font-size: 20px;
+      line-height: 31px;
+      text-align: center;
+      text-decoration-line: underline;
+      color: rgba(21, 15, 15, 0.61);
+      mix-blend-mode: normal; }
+    .servicios-background section p {
+      font-family: "Lexend", sans-serif;
+      font-style: normal;
+      font-weight: 600;
+      font-size: 12px;
+      line-height: 16px;
+      color: rgba(21, 15, 15, 0.61); }
+
 main {
   display: grid;
   grid-template-columns: repeat(1, 1fr);
-  grid-template-rows: repeat(3, 150px);
+  grid-template-rows: repeat(3, 165px);
   background: linear-gradient(0deg, rgba(219, 216, 187, 0.47), rgba(219, 216, 187, 0.47)), url(../assets/imagenes/foto-index.jpg);
   background-size: cover;
   background-repeat: no-repeat;
@@ -186,6 +256,11 @@ main {
     grid-row: 1/2;
     align-self: start;
     align-items: center; }
+    main .container-input svg {
+      position: absolute;
+      top: 28px;
+      left: 45px;
+      transform: translate(0, 10%); }
     main .container-input input {
       width: 200px;
       padding: 10px 0px 10px 40px;
@@ -195,14 +270,9 @@ main {
       outline: none;
       opacity: 0.8;
       box-shadow: 0 0 5px #741a40; }
-      main .container-input input svg {
-        position: absolute;
-        top: 50px;
-        left: 20px;
-        transform: translate(0, 10%); }
-        main .container-input input svg .input:focus {
-          opacity: 1;
-          width: 250px; }
+    main .container-input input:focus {
+      opacity: 1;
+      width: 250px; }
   main .parrafo {
     grid-column: 1/2;
     grid-row: 3/4;
