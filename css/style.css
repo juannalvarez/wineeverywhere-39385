@@ -21,10 +21,12 @@
   .header .titulo-h1 {
     font-family: "Lexend Tera", sans-serif;
     font-size: 20px;
-    line-height: 40px;
-    color: #FFFFFF; }
+    padding-top: 18px;
+    line-height: 35px;
+    color: #FFFFFF;
+    text-align: center; }
   .header .navigation .menu {
-    background-color: #83284e;
+    background-color: #741a40;
     border: 1px solid #828073;
     list-style: none;
     transition: all 0.5s;
@@ -36,7 +38,8 @@
     width: 50px;
     float: right;
     height: 50px;
-    cursor: pointer; }
+    cursor: pointer;
+    padding-top: 18px; }
     .header .navigation .checkbtn:active, .header .navigation .checkbtn::after {
       transform: scale(1.2);
       background: linear-gradient(#b91d73c9 0%, #dd2a7bc9 50%, #f953c6c9 100%);
@@ -55,19 +58,23 @@
     position: absolute;
     width: 100%;
     height: 250px;
-    top: 85px;
+    top: 95px;
     left: -105%;
     text-align: center;
     float: right;
     margin-right: 20px;
     z-index: 1;
-    transition: all 0.5s; }
+    transition: all 0.5s;
+    font-family: 'Lexend', sans-serif;
+    font-style: normal; }
     .header .navigation ul li {
       display: flex;
       display: block;
       margin: 10px 0;
       line-height: 30px;
-      transition: 0.5s; }
+      transition: 0.5s;
+      text-decoration: none;
+      color: #FFFFFF; }
       .header .navigation ul li a {
         color: white;
         display: block;
@@ -101,34 +108,103 @@
   .header .navigation #check:checked ~ ul {
     left: 0; }
 
+.contacto-background {
+  background-color: rgba(219, 216, 187, 0.47);
+  width: 100%;
+  height: 495px;
+  background-color: rgba(219, 216, 187, 0.47);
+  background-repeat: no-repeat;
+  position: relative;
+  background-size: cover; }
+  .contacto-background .foto-contacto {
+    display: none; }
+  .contacto-background .contacto-form {
+    padding: 20px;
+    border-radius: 10px; }
+    .contacto-background .contacto-form label {
+      color: rgba(21, 15, 15, 0.61);
+      font-family: "Lexend", sans-serif;
+      font-weight: 600; }
+    .contacto-background .contacto-form .contacto-titulo {
+      font-family: "Lexend", sans-serif;
+      font-size: 24px;
+      color: rgba(21, 15, 15, 0.61);
+      margin-bottom: 12px;
+      font-weight: bold;
+      display: block; }
+    .contacto-background .contacto-form form {
+      display: flex;
+      flex-direction: column; }
+      .contacto-background .contacto-form form textarea {
+        resize: none;
+        height: 80px;
+        width: 200px;
+        padding: 10px;
+        border: none;
+        border-radius: 5px;
+        margin-bottom: 20px; }
+      .contacto-background .contacto-form form textarea:focus {
+        outline: none;
+        box-shadow: 0 0 5px #741a40;
+        transform: scale(1.05);
+        transition: transform 0.3s ease-in-out; }
+      .contacto-background .contacto-form form input {
+        padding: 10px;
+        border: none;
+        border-radius: 5px;
+        margin-bottom: 20px; }
+      .contacto-background .contacto-form form input:focus {
+        outline: none;
+        box-shadow: 0 0 5px #741a40;
+        transform: scale(1.05);
+        transition: transform 0.3s ease-in-out; }
+      .contacto-background .contacto-form form button[type="submit"] {
+        background-color: #741a40;
+        color: #fff;
+        border: none;
+        border-radius: 5px;
+        padding: 10px 20px;
+        font-size: 16px;
+        cursor: pointer; }
+      .contacto-background .contacto-form form button:hover {
+        transform: scale(1.1);
+        transition: transform 0.3s ease-in-out; }
+
 main {
   display: grid;
   grid-template-columns: repeat(1, 1fr);
-  grid-template-rows: repeat(3, 165px);
+  grid-template-rows: repeat(3, 150px);
   background: linear-gradient(0deg, rgba(219, 216, 187, 0.47), rgba(219, 216, 187, 0.47)), url(../assets/imagenes/foto-index.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center; }
   main .container-input {
-    position: relative; }
-    main .container-input .input {
+    position: relative;
+    padding-left: 35px;
+    padding-top: 20px;
+    grid-column: 1/2;
+    grid-row: 1/2;
+    align-self: start;
+    align-items: center; }
+    main .container-input input {
       width: 200px;
       padding: 10px 0px 10px 40px;
       border-radius: 9999px;
       border: solid 1px #333;
       transition: all .2s ease-in-out;
       outline: none;
-      opacity: 0.8; }
-      main .container-input .input .svg {
+      opacity: 0.8;
+      box-shadow: 0 0 5px #741a40; }
+      main .container-input input svg {
         position: absolute;
         top: 50px;
-        left: 50px;
+        left: 20px;
         transform: translate(0, 10%); }
-        main .container-input .input .svg .input:focus {
+        main .container-input input svg .input:focus {
           opacity: 1;
           width: 250px; }
   main .parrafo {
-    grid-column: 1/4;
+    grid-column: 1/2;
     grid-row: 3/4;
     align-self: end;
     align-items: center; }
@@ -139,9 +215,6 @@ main {
       line-height: 15px;
       text-align: center;
       color: #FFFFFF; }
-
-main {
-  background-color: rgba(219, 216, 187, 0.47); }
 
 footer {
   height: 50px;
