@@ -1,17 +1,159 @@
 * {
   margin: 0;
   padding: 0;
-  box-sizing: 0;
-  font-family: 'Lexend', sans-serif;
+  box-sizing: border-box;
   text-decoration: none;
-  font-size: 20px;
   list-style: none; }
 
-.navbar {
+.header {
+  margin-top: 0;
+  margin-bottom: 0;
+  width: 100%;
+  height: 100px;
+  background: linear-gradient(0deg, rgba(131, 40, 78, 0.78), rgba(131, 40, 78, 0.78)), url(../assets/imagenes/foto-header.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
   display: flex;
-  flex-direction: column;
+  justify-content: space-between;
+  position: relative;
+  transition: all 0.5s;
+  z-index: 1; }
+  .header .titulo-h1 {
+    font-family: "Lexend Tera", sans-serif;
+    font-size: 20px;
+    line-height: 40px;
+    color: #FFFFFF; }
+  .header .navigation .menu {
+    background-color: #83284e;
+    border: 1px solid #828073;
+    list-style: none;
+    transition: all 0.5s;
+    align-items: center; }
+  .header .navigation .checkbtn {
+    display: block;
+    position: sticky;
+    flex-direction: row;
+    width: 50px;
+    float: right;
+    height: 50px;
+    cursor: pointer; }
+    .header .navigation .checkbtn:active, .header .navigation .checkbtn::after {
+      transform: scale(1.2);
+      background: linear-gradient(#b91d73c9 0%, #dd2a7bc9 50%, #f953c6c9 100%);
+      border-radius: 25px;
+      transition: 0.01s; }
+    .header .navigation .checkbtn i {
+      font-size: 50px;
+      justify-content: end; }
+  .header .navigation #check {
+    display: none; }
+  .header .navigation ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    width: 100%;
+    height: 250px;
+    top: 85px;
+    left: -105%;
+    text-align: center;
+    float: right;
+    margin-right: 20px;
+    z-index: 1;
+    transition: all 0.5s; }
+    .header .navigation ul li {
+      display: flex;
+      display: block;
+      margin: 10px 0;
+      line-height: 30px;
+      transition: 0.5s; }
+      .header .navigation ul li a {
+        color: white;
+        display: block;
+        padding: 0 0 0 0;
+        font-size: 20px;
+        font-weight: 700;
+        transition: all 0.2s;
+        list-style: none;
+        text-decoration: none; }
+        .header .navigation ul li a:hover {
+          color: rgba(219, 216, 187, 0.47); }
+    .header .navigation ul .active {
+      color: black; }
+    .header .navigation ul .main-menu__link {
+      position: relative;
+      transition: all 0.4s; }
+    .header .navigation ul ::after {
+      content: "";
+      height: 2px;
+      width: 100%;
+      background-image: linear-gradient(#b91d73 0%, #dd2a7b 50%, #f953c6 100%);
+      position: absolute;
+      right: 0px;
+      bottom: -5px;
+      opacity: 0;
+      transition: all 0.35s ease;
+      pointer-events: none; }
+    .header .navigation ul .main-menu__link:hover::before,
+    .header .navigation ul .main-menu__link:focus::before {
+      opacity: 1; }
+  .header .navigation #check:checked ~ ul {
+    left: 0; }
+
+main {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  grid-template-rows: repeat(3, 165px);
+  background: linear-gradient(0deg, rgba(219, 216, 187, 0.47), rgba(219, 216, 187, 0.47)), url(../assets/imagenes/foto-index.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center; }
+  main .container-input {
+    position: relative; }
+    main .container-input .input {
+      width: 200px;
+      padding: 10px 0px 10px 40px;
+      border-radius: 9999px;
+      border: solid 1px #333;
+      transition: all .2s ease-in-out;
+      outline: none;
+      opacity: 0.8; }
+      main .container-input .input .svg {
+        position: absolute;
+        top: 50px;
+        left: 50px;
+        transform: translate(0, 10%); }
+        main .container-input .input .svg .input:focus {
+          opacity: 1;
+          width: 250px; }
+  main .parrafo {
+    grid-column: 1/4;
+    grid-row: 3/4;
+    align-self: end;
+    align-items: center; }
+    main .parrafo p {
+      font-family: "Lexend", sans-serif;
+      font-style: italic;
+      font-size: 12px;
+      line-height: 15px;
+      text-align: center;
+      color: #FFFFFF; }
+
+main {
+  background-color: rgba(219, 216, 187, 0.47); }
+
+footer {
+  height: 50px;
+  background-color: black;
+  display: flex;
   align-items: center;
-  list-style: none;
-  font-family: 'Lexend', sans-serif;
-  font-style: normal;
-  gap: 10px; }
+  justify-content: space-evenly; }
+  footer div {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    gap: 30px; }
+    footer div p {
+      display: none; }

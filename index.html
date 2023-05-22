@@ -6,16 +6,32 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Wine Everywhere</title>
-    <link rel="stylesheet" href="./css/style.css">
     <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@200&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Lexend+Tera:wght@800&family=Lexend:wght@200&display=swap"
         rel="stylesheet">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="./css/style.css">
 </head>
 
 <body>
     <div class="hero">
-        <header>
+        <header class="header">
+            <h1 class="titulo-h1">WINE EVERYWHERE</h1>
+            <nav class="navigation">
+                <input type="checkbox" name="" id="check">
+                <label for="check" class="checkbtn">
+                    <i class='bx bx-menu' style='color:#ffffff'  ></i>
+                </label>
+                <ul class="menu">
+                    <li class="main-menuitem"><a href="#" class="active main-menulink">HOME</a></li>
+                    <li class="main-menuitem"><a href="./pages/nosotros.html" class="main-menulink">NOSOTROS</a></li>
+                    <li class="main-menuitem"><a href="./pages/catalogo.html" class="main-menulink">CATÁLOGO</a></li>
+                    <li class="main-menuitem"><a href="./pages/servicios.html" class="main-menulink">SERVICIOS</a></li>
+                    <li class="main-menuitem"><a href="./pages/contacto.html" class="main-menulink">CONTACTO</a></li>
+                </ul>
+            </nav>
+        </header>
+        <!-- <header>
             <div class="header-menu">
                 <h1 class="titulo-h1">WINE EVERYWHERE</h1>
                 <nav class="main-navbar">
@@ -28,12 +44,27 @@
                     </ul>
                 </nav>
             </div>
-        </header>
+        </header> -->
         <main class="main-index">
-            <div class="busqueda">
+            <div class="container-input">
+                <input type="search" placeholder="Búsqueda" name="text" class="input">
+                <svg fill="#000000" width="20px" height="20px" viewBox="0 0 1920 1920"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path
+                        d="M790.588 1468.235c-373.722 0-677.647-303.924-677.647-677.647 0-373.722 303.925-677.647 677.647-677.647 373.723 0 677.647 303.925 677.647 677.647 0 373.723-303.924 677.647-677.647 677.647Zm596.781-160.715c120.396-138.692 193.807-319.285 193.807-516.932C1581.176 354.748 1226.428 0 790.588 0S0 354.748 0 790.588s354.748 790.588 790.588 790.588c197.647 0 378.24-73.411 516.932-193.807l516.028 516.142 79.963-79.963-516.142-516.028Z"
+                        fill-rule="evenodd"></path>
+                </svg>
+            </div>
+
+            <!-- <div class="busqueda">
                 <form action="">
-                    <input type="search" placeholder="Búsqueda" class="busqueda">
+                    <input type="search" placeholder="Búsqueda">
                     <label for=""></label>
+            </div> -->
+            <div class="parrafo">
+                <p>Eleva tus momentos especiales con vinos de calidad. Desde la bodega hasta tu copa. Descubre este
+                    nuevo
+                    arte embotellado.</p>
             </div>
         </main>
         <footer>
