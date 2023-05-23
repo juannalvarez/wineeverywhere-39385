@@ -1,0 +1,86 @@
+.catalogo-background {
+    background-color: $bg-main-resto;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: 1200px;
+    background: $bg-index;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    section {
+        height: 30px;
+        h2{
+            font-family: $lexend;
+            font-size: 20px;
+            color: rgba(21, 15, 15, 0.61);
+            font-weight: 600;
+            text-align: center;
+            text-decoration-line: underline;
+            grid-row: 1/2;
+        }
+    }
+
+    .contenedor-productos {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        list-style: none;
+        font-family: 'Lexend', sans-serif;
+        font-style: normal;
+        padding-top: -120px;
+        gap: 50px;
+        grid-row: 1/2;
+        padding-top: 30px;
+
+        .contenedor-productos {
+            align-items: center;
+        }
+
+        .cards {
+
+            width: 250px;
+            height: 254px;
+            border-radius: 50px;
+            background: #e0e0e0;
+            box-shadow: 5px 5px 5px rgb(116, 26, 64),
+                -20px -20px 60px #333;
+
+            .cards-body {
+                a {
+                    text-decoration: none;
+                    color: rgb(116, 26, 64);
+                    background-image: rgb(116, 26, 64)
+                }
+
+                button {
+                    cursor: pointer;
+                    display: inline-flex;
+                    align-items: center;
+                    font-size: 12px;
+                    font-weight: 700;
+                    font-family: $lexend;
+                    margin-left: 40px;
+                    padding: 10px 40px 10px 40px;
+                    border-radius: 5px;
+                    background-image: rgb(116, 26, 64);
+
+                }
+
+                h4 {
+                    text-align: center;
+                    font-weight: 600;
+                }
+
+                p {
+                    text-align: center;
+                }
+            }
+
+            img {
+                width: 150px;
+                height: 150px;
+                margin-left: 50px;
+            }
+        }
+    }
+}
