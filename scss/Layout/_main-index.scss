@@ -9,7 +9,7 @@ main {
 
     .container-input {
         position: relative;
-        padding-left: 35px;
+        padding-left: 55px;
         padding-top: 20px;
         grid-column: 1/2;
         grid-row: 1/2;
@@ -19,7 +19,7 @@ main {
         svg {
             position: absolute;
             top: 28px;
-            left: 45px;
+            left: 65px;
             transform: translate(0, 10%);
         }
 
@@ -53,7 +53,7 @@ main {
             font-size: 12px;
             line-height: 15px;
             text-align: center;
-            color: #FFFFFF;
+            color: rgba(219, 216, 187, 0.818);
         }
     }
 }

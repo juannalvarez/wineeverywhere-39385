@@ -120,7 +120,7 @@ main {
   background-position: center; }
   main .container-input {
     position: relative;
-    padding-left: 35px;
+    padding-left: 55px;
     padding-top: 20px;
     grid-column: 1/2;
     grid-row: 1/2;
@@ -129,7 +129,7 @@ main {
     main .container-input svg {
       position: absolute;
       top: 28px;
-      left: 45px;
+      left: 65px;
       transform: translate(0, 10%); }
     main .container-input input {
       width: 200px;
@@ -154,7 +154,7 @@ main {
       font-size: 12px;
       line-height: 15px;
       text-align: center;
-      color: #FFFFFF; }
+      color: rgba(219, 216, 187, 0.818); }
 
 .catalogo-background {
   background-color: rgba(219, 216, 187, 0.47);
@@ -363,3 +363,110 @@ footer {
     gap: 30px; }
     footer div p {
       display: none; }
+
+@media screen and (min-width: 425px) {
+  .header .titulo-h1 {
+    font-size: 25px;
+    padding-top: 20px;
+    padding-left: 25px;
+    line-height: 35px;
+    color: #FFFFFF;
+    text-align: center; }
+  main .container-input input {
+    width: 350px; }
+  .parrafo p b {
+    font-size: 15px; }
+  .footer-flex {
+    gap: 45px; } }
+
+@media screen and (min-width: 768px) {
+  .header {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    font-family: 'Lexend', sans-serif; }
+    .header .titulo-h1 {
+      font-size: 35px;
+      padding-top: 35px;
+      line-height: 35px;
+      color: #FFFFFF;
+      text-align: center; }
+    .header .navigation .menu {
+      flex-direction: row;
+      justify-content: space-around;
+      align-items: center;
+      font-family: 'Lexend', sans-serif;
+      font-style: normal;
+      font-weight: 400;
+      font-size: 20px;
+      text-align: center;
+      gap: 40px; }
+  main .container-input {
+    padding-left: 100px; }
+    main .container-input svg {
+      left: 110px; }
+    main .container-input input {
+      width: 580px; }
+  .parrafo p b {
+    font-size: 15px; }
+  .footer-flex {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    gap: 5px; }
+    .footer-flex p {
+      display: block;
+      color: #DBD8BB;
+      text-decoration: none;
+      font-family: 'Lexend';
+      font-style: normal;
+      font-size: 10px;
+      margin: 5px; } }
+
+@media screen and (min-width: 768px) {
+  .header {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    font-family: 'Lexend', sans-serif; }
+    .header .titulo-h1 {
+      font-size: 35px;
+      padding-top: 35px;
+      line-height: 35px;
+      color: #FFFFFF;
+      text-align: center; }
+    .header .navigation .menu {
+      flex-direction: row;
+      justify-content: space-around;
+      align-items: center;
+      font-family: 'Lexend', sans-serif;
+      font-style: normal;
+      font-weight: 400;
+      font-size: 20px;
+      text-align: center;
+      gap: 40px; }
+  main .container-input {
+    padding-left: 100px; }
+    main .container-input svg {
+      left: 110px; }
+    main .container-input input {
+      width: 580px; }
+  .parrafo p b {
+    font-size: 15px; }
+  .footer-flex {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    gap: 5px; }
+    .footer-flex p {
+      display: block;
+      color: #DBD8BB;
+      text-decoration: none;
+      font-family: 'Lexend';
+      font-style: normal;
+      font-size: 10px;
+      margin: 5px; } }

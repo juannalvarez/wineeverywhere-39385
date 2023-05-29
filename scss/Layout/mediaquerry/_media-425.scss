@@ -1,0 +1,31 @@
+@media screen and (min-width:425px) {
+    .header{
+        .titulo-h1 {
+            font-size: 25px;
+            padding-top: 20px;
+            padding-left: 25px;
+            line-height: 35px;
+            color: #FFFFFF;
+            text-align: center;
+        }
+    }
+    main {
+        .container-input {
+            input {
+                width: 350px;
+            }
+        }
+    }
+
+    .parrafo {
+        p {
+            b {
+                font-size: 15px;
+            }
+            }
+        }
+
+    .footer-flex {
+        gap: 45px;
+    }
+}
