@@ -12,7 +12,7 @@
         h2{
             font-family: $lexend;
             font-size: 20px;
-            color: rgba(21, 15, 15, 0.61);
+            color: rgba(219, 216, 187, 0.47);
             font-weight: 600;
             text-align: center;
             text-decoration-line: underline;
@@ -41,9 +41,9 @@
             width: 250px;
             height: 254px;
             border-radius: 50px;
-            background: #e0e0e0;
+            background: #ffffff;
             box-shadow: 5px 5px 5px rgb(116, 26, 64),
-                -20px -20px 60px #333;
+                -20px -20px 60px rgba(219, 216, 187, 0.47);
 
             .cards-body {
                 a {

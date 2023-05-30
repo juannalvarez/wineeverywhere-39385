@@ -1,4 +1,4 @@
-@media screen and (min-width:768px) {
+@media screen and (min-width:1024px) {
     .header {
         // height: 150px;
         display: flex;
@@ -42,7 +42,11 @@
             }
 
             input {
-                width: 580px;
+                &:focus {
+                    opacity: 1;
+                    width: 850px;
+        
+                }
             }
         }
     }
