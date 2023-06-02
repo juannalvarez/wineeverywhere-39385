@@ -12,7 +12,10 @@
     main {
         .container-input {
             input {
-                width: 250px;
+                width: 200px;
+                &:focus {
+                    width: 250px;
+                    }
             }
         }
     }

@@ -2,7 +2,7 @@
     background-color: $bg-main-resto;
     display: grid;
     grid-template-columns: repeat(1, 1fr);
-    grid-template-rows: 1200px;
+    grid-template-rows: 30px 1200px;
     background: $bg-index;
     background-size: cover;
     background-repeat: no-repeat;
@@ -29,7 +29,7 @@
         font-style: normal;
         padding-top: -120px;
         gap: 50px;
-        grid-row: 1/2;
+        grid-row: 2/3;
         padding-top: 30px;
 
         .contenedor-productos {

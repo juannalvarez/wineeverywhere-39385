@@ -12,7 +12,11 @@
     main {
         .container-input {
             input {
-                width: 350px;
+                width: 250px;
+                &:focus {
+                    opacity: 1;
+                    width: 300px;
+                    }
             }
         }
     }

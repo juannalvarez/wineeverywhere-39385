@@ -1,8 +1,7 @@
 @media screen and (min-width:768px) {
     .header {
-        background-color: $bg-index;
         display: flex;
-        flex-direction: column;
+        flex-direction: row;
         justify-content: space-around;
         align-items: center;
         font-family: 'Lexend', sans-serif;  
@@ -15,22 +14,7 @@
             text-align: center;
         }
 
-        .navigation {
 
-            .menu {
-                flex-direction: row;
-                justify-content: space-around;
-                align-items: center;
-                font-family: 'Lexend', sans-serif;
-                font-style: normal;
-                font-weight: 400;
-                font-size: 20px;
-                text-align: center;
-                gap: 40px;
-
-            }
-
-        }
     }
 
     main {

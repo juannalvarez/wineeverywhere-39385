@@ -6,6 +6,10 @@ main {
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
+    .ma{
+        -webkit-animation: kenburns-top 5s ease-out both;
+                animation: kenburns-top 5s ease-out both;
+    }
 
     .container-input {
         position: relative;
@@ -32,19 +36,19 @@ main {
             outline: none;
             opacity: 0.8;
             box-shadow: 0 0 5px rgb(116, 26, 64);
+            &:focus {
+                opacity: 1;
+                width: 250px;
+                }
         }
 
-        input:focus {
-            opacity: 1;
-            width: 250px;
 
-        }
     }
 
     .parrafo {
         grid-column: 1/2;
-        grid-row: 3/4;
-        align-self: end;
+        grid-row: 1/2;
+        align-self: center;
         align-items: center;
 
         p {

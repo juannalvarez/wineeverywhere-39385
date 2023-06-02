@@ -1,6 +1,6 @@
 @media screen and (min-width:1024px) {
     .header {
-        // height: 150px;
+        height: 150px;
         display: flex;
         flex-direction: column;
         justify-content: space-around;
@@ -8,7 +8,7 @@
         font-family: 'Lexend', sans-serif;
 
         .titulo-h1 {
-            font-size: 35px;
+            font-size: 50px;
             padding-top: 35px;
             line-height: 35px;
             color: #FFFFFF;
@@ -16,8 +16,13 @@
         }
 
         .navigation {
+            .checkbtn {
+                display: none;
+            }
 
             .menu {
+                background-color: transparent;
+                border: transparent;
                 flex-direction: row;
                 justify-content: space-around;
                 align-items: center;
@@ -28,6 +33,29 @@
                 text-align: center;
                 gap: 40px;
 
+            }
+
+            ul {
+                width: 100%;
+                position: relative;
+                height: 50px;
+                top: 0;
+                left: 0%;
+                flex-direction: row;
+                transition: none;
+                text-align: center;
+                margin-top: 0;
+                align-items: center;
+                justify-content: center;
+                // flex-direction: row;
+                // justify-content: space-around;
+                // align-items: center;
+                // font-family: 'Lexend', sans-serif;
+                // font-style: normal;
+                // font-weight: 400;
+                // font-size: 20px;
+                // text-align: center;
+                // gap: 40px;
             }
 
         }
@@ -45,7 +73,7 @@
                 &:focus {
                     opacity: 1;
                     width: 850px;
-        
+
                 }
             }
         }
@@ -53,26 +81,24 @@
 
     .parrafo {
         p {
+            width: 400px;
+            padding-bottom: 10px;
+            padding-left: 35px;
+
             b {
                 font-size: 15px;
+                color: rgba(21, 15, 15, 0.61);
+                font-weight: 900;
+                font-style: normal;
             }
         }
     }
 
     .footer-flex {
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-        justify-content: space-between;
-        gap: 5px;
-        p{
-            display: block;
-            color: #DBD8BB;
-            text-decoration: none;
-            font-family: 'Lexend';
-            font-style: normal;
-            font-size: 10px;
-            margin: 5px;
+        gap: 7px;
+
+        p {
+            font-size: 13px;
         }
     }
 }

@@ -1,0 +1,60 @@
+@media screen and (min-width:1440px) {
+    .header {
+        height: 150px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        font-family: 'Lexend', sans-serif;
+
+        .titulo-h1 {
+            font-size: 50px;
+            padding-top: 35px;
+            line-height: 35px;
+            color: #FFFFFF;
+            text-align: center;
+        }
+
+    }
+
+    main {
+        @include grid (repeat(3, 1fr), repeat(7, 121px), center, center, none);
+
+        .container-input {
+            padding-left: 100px;
+
+            svg {
+                left: 110px;
+            }
+
+            input {
+                &:focus {
+                    opacity: 1;
+                    width: 850px;
+        
+                }
+            }
+        }
+    }
+
+    .parrafo {
+        p {
+            width: 400px;
+            padding-bottom: 10px;
+            padding-left: 35px;
+            b {
+                font-size: 15px;
+                color: rgba(21, 15, 15, 0.61);
+                font-weight: 900;
+                font-style: normal;
+            }
+        }
+    }
+
+    .footer-flex {
+        gap: 7px;
+        p{
+            font-size: 13px;
+        }
+    }
+}
