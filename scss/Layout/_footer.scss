@@ -4,6 +4,7 @@ footer{
     display: flex;
     align-items: center;
     justify-content: space-evenly;
+    
     div{
         display: flex;
         flex-direction: row;
@@ -13,5 +14,6 @@ footer{
         p{
             display: none;
     }
-}
+    }
+    
 }
