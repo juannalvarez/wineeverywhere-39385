@@ -80,7 +80,7 @@ header {
 }
 
 /*--------------------------------MAIN-NOSOTROS------------------------------*/
-.nosotros-background {
+.main-nosotros {
     display: grid;
     grid-template-columns: repeat(5, 1fr);
     grid-template-rows: repeat(5, 81px);
@@ -134,7 +134,7 @@ header {
 */
 
 /*--------------------------------MAIN-CATALOGO------------------------------*/
-.catalogo-background {
+.main-catalogo {
     background-color: rgba(219, 216, 187, 0.47);
     background-repeat: no-repeat;
     position: relative;
@@ -183,7 +183,7 @@ header {
 
 /*--------------------------------MAIN-SERVICIOS------------------------------*/
 
-.servicios-background {
+.main-servicios {
     display: grid;
     grid-template-columns: 35px 1fr 1fr 1fr 35px;
     grid-template-rows: repeat(5, 81px);
@@ -234,7 +234,7 @@ header {
 .foto-contacto {
     display: none;
 }
-.contacto-background {
+.main-contacto {
     display: grid;
     grid-template-columns: 35px 1fr 1fr 1fr 35px;
     grid-template-rows: repeat(5, 81px);
@@ -339,7 +339,7 @@ footer {
         width: 450px;
     }
 
-    .nosotros-background {
+    .main-nosotros {
         display: grid;
         grid-template-columns: repeat(7, 1fr);
         grid-template-rows: repeat(5, 81px);
@@ -479,7 +479,7 @@ footer {
         align-items: start;
         justify-self: center;
     }
-    .nosotros-background {
+    .main-nosotros {
         grid-template-columns: repeat(7, 1fr);
         grid-template-rows: repeat(7, 81px);
         background-color: rgba(219, 216, 187, 0.47);

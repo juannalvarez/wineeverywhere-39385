@@ -1,38 +1,48 @@
-.nosotros-background{
-    display: grid;
-    grid-template-columns: 35px 1fr 1fr 1fr 35px;
-    grid-template-rows: repeat(5, 99px);
+.main-nosotros {
+    @include grid (repeat(5, 1fr), repeat(7, 120px), center, center, none);
     background-color: rgba(219, 216, 187, 0.47);
-    div{
-        display: none;
+    .titulo-nosotros {
+        grid-column: 1/6;
+        grid-row: 1/2;
+        font-family: 'Lexend';
+        font-style: normal;
+        font-weight: 600;
+        font-size: 15px;
+        line-height: 10px;
+        text-align: center;
+        text-decoration-line: underline;
+        color: rgba(21, 15, 15, 0.61);
+        mix-blend-mode: normal;
     }
-    section{
-        padding: 0px 10px 0px 10px;
+
+    .parrafo-nosotros {
+        margin: 0px 30px;
+        grid-column: 1/6;
+        grid-row: 2/5;
+        font-family: $lexend;
+        font-style: normal;
+        font-weight: 600;
+        font-size: 12px;
+        line-height: 16px;
+        color: rgba(21, 15, 15, 0.61);
+
+    }
+
+    .imagenes-nosotros {
         grid-column: 2/5;
-        grid-row: 1/6;
-        align-self: center;
-        background-color: rgba(219, 216, 187, 0.6);
-        backdrop-filter: blur(2px);
-        border: 2px solid #595742;
-        h2{
-            font-family: 'Lexend';
-            font-style: normal;
-            font-weight: 600;
-            font-size: 20px;
-            line-height: 31px;
-            text-align: center;
-            text-decoration-line: underline;
-            color: rgba(21, 15, 15, 0.61);
-            mix-blend-mode: normal;
+        grid-row: 5/8;
+        .vino-nosotros {
+            width: 100%;
+            border-radius: 8px;
+            // &:hover{
+            //     scale: 1.05; PARA DESKTOP
+            // }
         }
-        p{
-            font-family: $lexend;
-            font-style: normal;
-            font-weight: 600;
-            font-size: 12px;
-            line-height: 16px;
-            color: rgba(21, 15, 15, 0.61);
-        
+        .viñedo-nosotros {
+            width: 100%;
+            border-radius: 8px;
         }
     }
+
 }
+

@@ -1,58 +1,47 @@
-.catalogo-background {
-    background-color: $bg-main-resto;
-    display: grid;
-    grid-template-columns: repeat(1, 1fr);
-    grid-template-rows: 30px 1200px;
-    background: $bg-index;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    section {
-        height: 30px;
-        h2{
-            font-family: $lexend;
-            font-size: 20px;
-            color: black;
-            font-weight: 600;
-            text-align: center;
-            text-decoration-line: underline;
-            grid-row: 1/2;
-        }
+.main-catalogo {
+    background-color: rgba(219, 216, 187, 0.47);
+    @include grid (repeat(3, 1fr), 50px repeat(11, 150px), center, center, none);
+    .titulo-catalogo {
+        grid-column: 1/4;
+        grid-row: 1/2;
+        font-family: 'Lexend';
+        font-style: normal;
+        font-weight: 600;
+        font-size: 15px;
+        line-height: 10px;
+        text-align: center;
+        text-decoration-line: underline;
+        color: rgba(21, 15, 15, 0.61);
+        mix-blend-mode: normal;
     }
 
     .contenedor-productos {
+        grid-column: 1/4;
+        grid-row: 2/13;
         display: flex;
         flex-direction: column;
         align-items: center;
         list-style: none;
         font-family: 'Lexend', sans-serif;
         font-style: normal;
-        gap: 50px;
-        grid-row: 2/3;
-        padding-top: 30px;
-
+        gap: 20px;
         .contenedor-productos {
             align-items: center;
         }
-
         .cards {
-
             width: 250px;
             height: 254px;
             border-radius: 50px;
             background: #ffffff;
             box-shadow: 5px 5px 5px rgb(116, 26, 64),
                 -20px -20px 60px rgba(219, 216, 187, 0.47);
-
             .cards-body {
                 display: flex;
                 flex-direction: column;
                 align-items: center;
                 a {
-                    text-decoration: none;
-                    color: rgb(116, 26, 64);
                     button {
-                        @extend .boton;
+                        @extend .boton-violeta;
                     }
                 }
                 h4 {

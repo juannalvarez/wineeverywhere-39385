@@ -17,9 +17,20 @@
 
     }
 
-    main {
-        // @include grid (repeat(6, 1fr), repeat(7, 121px), center, center, none);
+    .main-index {
         .section-1{
+            .parrafo {
+                p {
+                    padding-top: 30px;
+                    font-family: $lexend;
+                    font-style: normal;
+                    font-size: 20px;
+                    font-weight: 900;
+                    line-height: 15px;
+                    text-align: center;
+                    color: black
+                }
+            }
             .container-input {
                 padding-left: 100px;
     
@@ -36,80 +47,9 @@
                 }
             }
         }
-        .bodegas{
-            @include grid (repeat(6, 1fr), 50px 150px, center, center, none);
-            background: rgb(214, 212, 184);
-            gap: 10px;
-            
-        h2 {
-            grid-column: 1/7;
-            grid-row: 1/2;
-            font-size: 20px;
-            line-height: 15px;
-            font-weight: 900;
-            text-align: center;
-            color: black
-        }
 
-        .bodega-1 {
-            grid-row: 2/3;
-            grid-column: 1/2;
-            justify-content: center;
-            width: 150px;
-        }
-
-        .bodega-2 {
-            grid-row: 2/3;
-            grid-column: 2/3;
-            justify-content: center;
-            width: 150px;
-        }
-
-        .bodega-3 {
-            grid-row: 2/3;
-            grid-column: 3/4;
-            justify-content: center;
-            width: 150px;
-        }
-
-        .bodega-4 {
-            grid-row: 2/3;
-            grid-column: 4/5;
-            justify-content: center;
-            width: 150px;
-        }
-
-        .bodega-5 {
-            grid-row: 2/3;
-            grid-column: 5/6;
-            justify-content: center;
-            width: 150px;
-        }
-
-        .bodega-6 {
-            grid-row: 2/3;
-            grid-column: 6/7;
-            justify-content: center;
-            width: 135px;
-        }
-        }
 
     }
-
-    .parrafo {
-        p {
-            width: 400px;
-            padding-bottom: 10px;
-            padding-left: 35px;
-            b {
-                font-size: 15px;
-                color: rgba(21, 15, 15, 0.61);
-                font-weight: 900;
-                font-style: normal;
-            }
-        }
-    }
-
     .footer-flex {
         gap: 7px;
         p{

@@ -4,7 +4,7 @@
         flex-direction: row;
         justify-content: space-around;
         align-items: center;
-        font-family: 'Lexend', sans-serif;  
+        font-family: 'Lexend', sans-serif;
 
         .titulo-h1 {
             font-size: 35px;
@@ -13,35 +13,35 @@
             color: #FFFFFF;
             text-align: center;
         }
-
-
     }
 
-    main {
-        .container-input {
-            padding-left: 100px;
+    .main-index {
+        .section-1 {
+            width: 100%;
+            height: 500px;
+            background-image: $bg-section1;
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
 
-            svg {
-                left: 110px;
-            }
+            .container-input {
+                padding-left: 100px;
 
-            input {
-                &:focus {
-                    opacity: 1;
-                    width: 580px;
-        
+                svg {
+                    left: 110px;
+                }
+
+                input {
+                    &:focus {
+                        opacity: 1;
+                        width: 580px;
+
+                    }
                 }
             }
         }
     }
 
-    .parrafo {
-        p {
-            b {
-                font-size: 15px;
-            }
-        }
-    }
 
     .footer-flex {
         display: flex;
@@ -49,7 +49,8 @@
         align-items: center;
         justify-content: space-between;
         gap: 5px;
-        p{
+
+        p {
             display: block;
             color: #DBD8BB;
             text-decoration: none;
