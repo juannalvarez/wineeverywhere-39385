@@ -1,48 +1,48 @@
 .main-contacto {
     @include grid (repeat(5, 1fr), repeat(5, 100px), center, center, none);
     background-color: rgba(219, 216, 187, 0.47);
-    // background-image: $bg-index;
-    // background-repeat: no-repeat;
-    // background-size: cover;
+
+    .titulo-contacto {
+        grid-column: 1/6;
+        grid-row: 1/2;
+        font-family: 'Lexend';
+        font-style: normal;
+        font-weight: 600;
+        font-size: 15px;
+        line-height: 10px;
+        text-align: center;
+        text-decoration-line: underline;
+        color: rgba(21, 15, 15, 0.61);
+        mix-blend-mode: normal;
+    }
 
     .contacto-form {
         padding: 0px 20px;
         border-radius: 10px;
         grid-column: 1/6;
         grid-row: 2/5;
-
-        label {
-            color: rgba(21, 15, 15, 0.61);
-            font-family: $lexend;
-            font-weight: 600;
-        }
-
-        .contacto-titulo {
-            grid-column: 1/6;
-            grid-row: 1/2;
-            font-family: 'Lexend';
-            font-style: normal;
-            font-weight: 600;
-            font-size: 15px;
-            line-height: 10px;
-            text-align: center;
-            text-decoration-line: underline;
-            color: rgba(21, 15, 15, 0.61);
-            mix-blend-mode: normal;
-
-            font-family: $lexend;
-            font-size: 20px;
-            color: rgba(21, 15, 15, 0.61);
-            font-weight: 600;
-            text-align: center;
-            text-decoration-line: underline;
-        }
-
         form {
             padding-top: 20px;
             display: flex;
             flex-direction: column;
 
+            label {
+                color: rgba(21, 15, 15, 0.61);
+                font-family: $lexend;
+                font-weight: 600;
+            }
+            input {
+                padding: 10px;
+                border: none;
+                border-radius: 5px;
+                margin-bottom: 20px;
+                &:focus {
+                    outline: none;
+                    box-shadow: 0 0 5px rgb(116, 26, 64);
+                    transform: scale(1.05);
+                    transition: transform 0.3s ease-in-out;
+                }
+            }
             textarea {
                 resize: none;
                 height: 80px;
@@ -51,36 +51,41 @@
                 border: none;
                 border-radius: 5px;
                 margin-bottom: 20px;
+                &:focus {
+                    outline: none;
+                    box-shadow: 0 0 5px rgb(116, 26, 64);
+                    transform: scale(1.05);
+                    transition: transform 0.3s ease-in-out;
+                }
             }
-
-            textarea:focus {
-                outline: none;
-                box-shadow: 0 0 5px rgb(116, 26, 64);
-                transform: scale(1.05);
-                transition: transform 0.3s ease-in-out;
-            }
-
-            input {
-                padding: 10px;
-                border: none;
-                border-radius: 5px;
-                margin-bottom: 20px;
-            }
-
-            input:focus {
-                outline: none;
-                box-shadow: 0 0 5px rgb(116, 26, 64);
-                transform: scale(1.05);
-                transition: transform 0.3s ease-in-out;
-            }
-
             .boton {
                 @extend .boton-violeta;
             }
         }
     }
-    .section-contacto{
-        grid-column: 1/5;
-        grid-row: 4/8;
+
+    .section-contacto {
+        grid-column: 1/6;
+        grid-row: 5/6;
+        .parrafo-contacto{
+            font-family: $lexend;
+            font-style: normal;
+            font-weight: 600;
+            font-size: 16px;
+            line-height: 15px;
+            text-align: center;
+            color: rgba(21, 15, 15, 0.61);
+            mix-blend-mode: normal;
+            strong{
+                padding: 10px;
+                color: rgb(116, 26, 64);
+                font-weight: 900;
+                font-size: 18px;
+                &:hover{
+                    background-color: rgb(116, 26, 64);
+                    color: rgb(219, 216, 187);
+                }
+            }
+        }
     }
 }
