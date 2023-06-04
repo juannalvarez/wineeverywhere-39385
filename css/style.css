@@ -244,7 +244,7 @@
 .main-contacto {
   display: grid;
   grid-template-columns: repeat(5, 1fr);
-  grid-template-rows: repeat(5, 100px);
+  grid-template-rows: repeat(6, 100px);
   justify-content: center;
   align-items: center;
   grid-template-areas: none;
@@ -449,15 +449,11 @@ footer {
     font-size: 25px;
     padding-top: 20px;
     padding-left: 25px;
-    line-height: 35px;
-    color: #FFFFFF;
-    text-align: center; }
+    line-height: 35px; }
   main .container-input input {
     width: 200px; }
     main .container-input input:focus {
-      width: 250px; }
-  .parrafo p b {
-    font-size: 20px; } }
+      width: 250px; } }
 
 @media screen and (min-width: 425px) {
   .header .titulo-h1 {
@@ -482,42 +478,154 @@ footer {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
-    align-items: center;
-    font-family: 'Lexend', sans-serif; }
+    align-items: center; }
     .header .titulo-h1 {
       font-size: 35px;
       padding-top: 35px;
       line-height: 35px;
       color: #FFFFFF;
       text-align: center; }
-  .main-index .section-1 {
-    width: 100%;
-    height: 500px;
-    background-image: url(../assets/imagenes/viñedo-index.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center; }
-    .main-index .section-1 .container-input {
-      padding-left: 100px; }
-      .main-index .section-1 .container-input svg {
-        left: 110px; }
+  .main-index .section-1 .container-input {
+    padding-left: 100px; }
+    .main-index .section-1 .container-input input {
+      width: 250px; }
       .main-index .section-1 .container-input input:focus {
         opacity: 1;
-        width: 580px; }
-  .footer-flex {
-    display: flex;
-    flex-direction: row;
+        width: 550px; }
+    .main-index .section-1 .container-input svg {
+      left: 110px; }
+  .main-index .section-1 .parrafo p {
+    font-size: 18px;
+    font-weight: 900;
+    line-height: 20px; }
+  .main-index .section-1 input:focus {
+    opacity: 1;
+    width: 580px; }
+  .main-index .bodegas {
+    grid-row: 3/4;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 120px);
+    justify-content: center;
     align-items: center;
-    justify-content: space-between;
-    gap: 5px; }
-    .footer-flex p {
-      display: block;
-      color: #DBD8BB;
-      text-decoration: none;
+    grid-template-areas: none;
+    justify-items: center;
+    background: #d6d4b8;
+    gap: 10px; }
+    .main-index .bodegas img {
+      width: 150px; }
+    .main-index .bodegas h2 {
+      grid-column: 1/4;
+      grid-row: 1/2;
+      font-size: 18px;
+      line-height: 20px; }
+    .main-index .bodegas .bodega-1 {
+      grid-column: 1/2;
+      grid-row: 2/3; }
+    .main-index .bodegas .bodega-2 {
+      grid-column: 2/3;
+      grid-row: 2/3; }
+    .main-index .bodegas .bodega-3 {
+      grid-column: 3/4;
+      grid-row: 2/3; }
+    .main-index .bodegas .bodega-4 {
+      grid-column: 1/2;
+      grid-row: 3/4; }
+    .main-index .bodegas .bodega-5 {
+      grid-column: 2/3;
+      grid-row: 3/4; }
+    .main-index .bodegas .bodega-6 {
+      grid-column: 3/4;
+      grid-row: 3/4; }
+  .main-nosotros {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(7, 160px);
+    justify-content: center;
+    align-items: center;
+    grid-template-areas: none; }
+    .main-nosotros .titulo-nosotros {
+      font-size: 18px; }
+    .main-nosotros .parrafo-nosotros {
+      margin: 0px 30px 30px 30px;
+      grid-column: 1/6;
+      grid-row: 2/4;
+      font-family: "Lexend", sans-serif;
+      font-style: normal;
+      font-weight: 900;
+      font-size: 18px;
+      line-height: 20px;
+      color: rgba(21, 15, 15, 0.61); }
+    .main-nosotros .imagenes-nosotros {
+      grid-column: 2/5;
+      grid-row: 4/8; }
+      .main-nosotros .imagenes-nosotros .vino-nosotros {
+        width: 100%;
+        border-radius: 8px; }
+      .main-nosotros .imagenes-nosotros .viñedo-nosotros {
+        width: 100%;
+        border-radius: 8px; }
+  .main-catalogo {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 50px repeat(11, 150px);
+    justify-content: center;
+    align-items: center;
+    grid-template-areas: none; }
+    .main-catalogo .titulo-catalogo {
+      font-size: 18px;
+      line-height: 15px; }
+  .main-servicios {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(7, 140px);
+    justify-content: center;
+    align-items: center;
+    grid-template-areas: none; }
+    .main-servicios .titulo-servicios {
+      grid-column: 1/6;
+      grid-row: 1/2;
       font-family: 'Lexend';
       font-style: normal;
-      font-size: 10px;
-      margin: 5px; } }
+      font-weight: 600;
+      font-size: 18px;
+      line-height: 20px;
+      text-align: center;
+      text-decoration-line: underline;
+      color: rgba(21, 15, 15, 0.61);
+      mix-blend-mode: normal; }
+    .main-servicios .parrafo-servicios {
+      grid-row: 2/8;
+      gap: 20px;
+      font-size: 16px;
+      line-height: 25px; }
+  .main-contacto .titulo-contacto {
+    font-size: 18px;
+    line-height: 20px; }
+  .main-contacto .contacto-form {
+    margin: 0px 50px;
+    border-radius: 10px;
+    grid-column: 1/6;
+    grid-row: 2/5; }
+    .main-contacto .contacto-form form label {
+      font-family: "Lexend", sans-serif;
+      font-size: 18px;
+      font-weight: 600; } }
+
+.footer-flex {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  gap: 5px; }
+  .footer-flex p {
+    display: block;
+    color: #DBD8BB;
+    text-decoration: none;
+    font-family: 'Lexend';
+    font-style: normal;
+    font-size: 10px;
+    margin: 5px; }
 
 @media screen and (min-width: 1024px) {
   .header {
@@ -559,22 +667,6 @@ footer {
       margin-top: 0;
       align-items: center;
       justify-content: center; }
-  .main-index .section-1 .parrafo p {
-    padding-top: 30px;
-    font-family: "Lexend", sans-serif;
-    font-style: normal;
-    font-size: 18px;
-    font-weight: 900;
-    line-height: 15px;
-    text-align: center;
-    color: black; }
-  .main-index .section-1 .container-input {
-    padding-left: 100px; }
-    .main-index .section-1 .container-input svg {
-      left: 110px; }
-    .main-index .section-1 .container-input input:focus {
-      opacity: 1;
-      width: 850px; }
   .main-index .bodegas {
     display: grid;
     grid-template-columns: repeat(6, 1fr);
@@ -594,49 +686,79 @@ footer {
       color: black; }
     .main-index .bodegas .bodega-1 {
       grid-row: 2/3;
-      grid-column: 1/2;
-      justify-content: center;
-      width: 150px; }
+      grid-column: 1/2; }
       .main-index .bodegas .bodega-1:hover {
-        scale: 1.2; }
+        scale: 1.1; }
     .main-index .bodegas .bodega-2 {
       grid-row: 2/3;
-      grid-column: 2/3;
-      justify-content: center;
-      width: 150px; }
+      grid-column: 2/3; }
       .main-index .bodegas .bodega-2:hover {
-        scale: 1.2; }
+        scale: 1.1; }
     .main-index .bodegas .bodega-3 {
       grid-row: 2/3;
-      grid-column: 3/4;
-      justify-content: center;
-      width: 150px; }
+      grid-column: 3/4; }
       .main-index .bodegas .bodega-3:hover {
-        scale: 1.2; }
+        scale: 1.1; }
     .main-index .bodegas .bodega-4 {
       grid-row: 2/3;
-      grid-column: 4/5;
-      justify-content: center; }
+      grid-column: 4/5; }
       .main-index .bodegas .bodega-4:hover {
-        scale: 1.2; }
+        scale: 1.1; }
     .main-index .bodegas .bodega-5 {
       grid-row: 2/3;
-      grid-column: 5/6;
-      justify-content: center;
-      width: 130px; }
+      grid-column: 5/6; }
       .main-index .bodegas .bodega-5:hover {
-        scale: 1.2; }
+        scale: 1.1; }
     .main-index .bodegas .bodega-6 {
       grid-row: 2/3;
-      grid-column: 6/7;
-      justify-content: center;
-      width: 130px; }
+      grid-column: 6/7; }
       .main-index .bodegas .bodega-6:hover {
-        scale: 1.2; }
+        scale: 1.1; }
   .footer-flex {
     gap: 7px; }
     .footer-flex p {
-      font-size: 13px; } }
+      font-size: 14px; }
+  .main-nosotros {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: 100px repeat(6, 210px);
+    justify-content: center;
+    align-items: center;
+    grid-template-areas: none; }
+    .main-nosotros .titulo-nosotros {
+      font-size: 18px; }
+    .main-nosotros .parrafo-nosotros {
+      font-weight: 900;
+      font-size: 18px;
+      line-height: 25px; }
+    .main-nosotros .imagenes-nosotros {
+      grid-column: 2/5;
+      grid-row: 4/8; }
+      .main-nosotros .imagenes-nosotros .vino-nosotros {
+        width: 100%;
+        border-radius: 8px; }
+      .main-nosotros .imagenes-nosotros .viñedo-nosotros {
+        width: 100%;
+        border-radius: 8px; }
+  .main-contacto {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(6, 130px);
+    justify-content: center;
+    align-items: center;
+    grid-template-areas: none; }
+    .main-contacto .titulo-contacto {
+      font-size: 18px;
+      line-height: 20px; }
+    .main-contacto .contacto-form {
+      margin: 0px 50px;
+      border-radius: 10px;
+      grid-column: 1/6;
+      grid-row: 2/5; }
+      .main-contacto .contacto-form form label {
+        font-family: "Lexend", sans-serif;
+        font-size: 18px;
+        font-weight: 600; } }
 
 @media screen and (min-width: 1440px) {
   .header {

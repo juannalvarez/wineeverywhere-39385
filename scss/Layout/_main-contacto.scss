@@ -1,5 +1,5 @@
 .main-contacto {
-    @include grid (repeat(5, 1fr), repeat(5, 100px), center, center, none);
+    @include grid (repeat(5, 1fr), repeat(6, 100px), center, center, none);
     background-color: rgba(219, 216, 187, 0.47);
 
     .titulo-contacto {
