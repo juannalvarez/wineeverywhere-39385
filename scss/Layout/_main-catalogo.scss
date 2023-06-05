@@ -1,6 +1,7 @@
 .main-catalogo {
     background-color: rgba(219, 216, 187, 0.47);
     @include grid (repeat(3, 1fr), 50px repeat(11, 150px), center, center, none);
+
     .titulo-catalogo {
         grid-column: 1/4;
         grid-row: 1/2;
@@ -25,37 +26,47 @@
         font-family: 'Lexend', sans-serif;
         font-style: normal;
         gap: 20px;
-        .contenedor-productos {
-            align-items: center;
-        }
-        .cards {
+
+        .card-1,
+        .card-2,
+        .card-3,
+        .card-4,
+        .card-5,
+        .card-6 {
             width: 250px;
             height: 254px;
             border-radius: 50px;
             background: #ffffff;
             box-shadow: 5px 5px 5px rgb(116, 26, 64),
                 -20px -20px 60px rgba(219, 216, 187, 0.47);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+
             .cards-body {
                 display: flex;
                 flex-direction: column;
                 align-items: center;
+
                 a {
                     button {
                         @extend .boton-violeta;
                     }
                 }
+
                 h4 {
                     text-align: center;
                     font-weight: 600;
                 }
+
                 p {
                     text-align: center;
                 }
             }
+
             img {
                 width: 150px;
                 height: 150px;
-                margin-left: 50px;
             }
         }
     }

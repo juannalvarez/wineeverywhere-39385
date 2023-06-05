@@ -1,59 +1,124 @@
 @media screen and (min-width:1440px) {
     .header {
-        height: 150px;
-        display: flex;
-        flex-direction: column;
-        justify-content: space-around;
-        align-items: center;
-        font-family: 'Lexend', sans-serif;
-
         .titulo-h1 {
-            font-size: 50px;
+            font-size: 60px;
             padding-top: 35px;
             line-height: 35px;
-            color: #FFFFFF;
-            text-align: center;
         }
 
     }
 
     .main-index {
-        .section-1{
+        .section-1 {
+            height: 600px;
+
             .parrafo {
                 p {
                     padding-top: 30px;
-                    font-family: $lexend;
-                    font-style: normal;
                     font-size: 20px;
                     font-weight: 900;
                     line-height: 15px;
-                    text-align: center;
-                    color: black
+
                 }
             }
+
             .container-input {
                 padding-left: 100px;
-    
+
                 svg {
                     left: 110px;
                 }
-    
+
                 input {
                     &:focus {
                         opacity: 1;
                         width: 850px;
-            
+
                     }
                 }
             }
         }
-
-
     }
-    .footer-flex {
-        gap: 7px;
-        p{
-            font-size: 13px;
+
+    .main-index {
+        .bodegas {
+            @include grid (repeat(6, 1fr), 50px 150px, center, center, none);
+            background: rgb(214, 212, 184);
         }
+    }
+
+    .main-nosotros {
+        @include grid (repeat(5, 1fr), repeat(7, 250px), center, center, none);
+
+        .titulo-nosotros {
+            font-size: 25px;
+        }
+
+        .parrafo-nosotros {
+            grid-column: 1/6;
+            grid-row: 2/3;
+            font-weight: 900;
+            font-size: 25px;
+            line-height: 25px;
+        }
+
+        .imagenes-nosotros {
+            grid-column: 2/5;
+            grid-row: 3/8;
+
+            .vino-nosotros {
+                width: 100%;
+                border-radius: 8px;
+            }
+
+            .viñedo-nosotros {
+                width: 100%;
+                border-radius: 8px;
+            }
+        }
+    }
+
+    .main-catalogo {
+        @include grid (repeat(6, 1fr), repeat(4, 230px), center, center, none);
+
+        .contenedor-productos {
+            .card-1,
+            .card-2,
+            .card-3,
+            .card-4,
+            .card-5,
+            .card-6 {
+                width: 300px;
+                height: 300px;
+                img {
+                    width: 200px;
+                    height: 200px;
+                }
+            }
+        }
+
+        footer {
+            height: 70px;
+
+            div {
+                gap: 10px;
+
+                p {
+                    font-size: 18px;
+                    margin: 2px;
+                }
+
+                a {
+                    i {
+                        font-size: 25px;
+                    }
+                }
+
+                .iconos-copa {
+                    font-size: 25px;
+                }
+            }
+        }
+
     }
 }

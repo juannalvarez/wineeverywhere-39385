@@ -55,7 +55,10 @@
         .bodegas {
             @include grid (repeat(6, 1fr), 50px 150px, center, center, none);
             background: rgb(214, 212, 184);
-            gap: 10px;
+
+            img {
+                width: 160px;
+            }
 
             h2 {
                 grid-column: 1/7;
@@ -124,15 +127,6 @@
 
     }
 
-
-    .footer-flex {
-        gap: 7px;
-
-        p {
-            font-size: 14px;
-        }
-    }
-
     .main-nosotros {
         @include grid (repeat(5, 1fr), 100px repeat(6, 210px), center, center, none);
 
@@ -162,6 +156,105 @@
         }
     }
 
+    .main-catalogo {
+        background-color: rgba(219, 216, 187, 0.47);
+        @include grid (repeat(6, 1fr), repeat(4, 200px), center, center, none);
+
+        .titulo-catalogo {
+            grid-column: 1/7;
+            grid-row: 1/2;
+            font-size: 18px;
+            line-height: 20px;
+        }
+
+        .contenedor-productos {
+            grid-column: 1/7;
+            grid-row: 1/5;
+            @include grid (repeat(3, 1fr), repeat(2, 350px), center, center, none);
+            justify-items: center;
+            align-items: end;
+
+            .card-1 {
+                grid-column: 1/2;
+                grid-row: 1/2;
+            }
+
+            .card-2 {
+                grid-column: 2/3;
+                grid-row: 1/2;
+            }
+
+            .card-3 {
+                grid-column: 3/4;
+                grid-row: 1/2;
+            }
+
+            .card-4 {
+                grid-column: 1/2;
+                grid-row: 2/3;
+            }
+
+            .card-5 {
+                grid-column: 2/3;
+                grid-row: 2/3;
+            }
+
+            .card-6 {
+                grid-column: 3/4;
+                grid-row: 2/3;
+            }
+
+            .card-1,
+            .card-2,
+            .card-3,
+            .card-4,
+            .card-5,
+            .card-6 {
+                width: 250px;
+                height: 254px;
+                border-radius: 50px;
+                background: #ffffff;
+                box-shadow: 5px 5px 5px rgb(116, 26, 64),
+                    -20px -20px 60px rgba(219, 216, 187, 0.47);
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+
+                .cards-body {
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+
+                    h4 {
+                        text-align: center;
+                        font-weight: 600;
+                    }
+
+                    p {
+                        text-align: center;
+                    }
+                }
+
+                img {
+                    width: 150px;
+                    height: 150px;
+                }
+            }
+        }
+    }
+
+    .main-servicios {
+        @include grid (repeat(5, 1fr), repeat(7, 160px), center, center, none);
+
+        .parrafo-servicios {
+            grid-row: 2/8;
+            margin: 0px 40px;
+            gap: 20px;
+            font-size: 20px;
+            line-height: 28px;
+        }
+    }
+
     .main-contacto {
         @include grid (repeat(5, 1fr), repeat(6, 130px), center, center, none);
 
@@ -178,10 +271,52 @@
 
             form {
                 label {
-                    font-family: $lexend;
-                    font-size: 18px;
-                    font-weight: 600;
+                    font-size: 20px;
+                    font-weight: 900;
                 }
+
+                textarea {
+                    height: 200px;
+                    width: 400px;
+                    padding: 10px;
+                }
+            }
+        }
+
+        .section-contacto {
+            grid-column: 1/6;
+            grid-row: 6/7;
+
+            .parrafo-contacto {
+                font-size: 20px;
+                line-height: 15px;
+
+                strong {
+                    padding: 5px;
+                    font-weight: 900;
+                    font-size: 22px;
+                }
+            }
+        }
+    }
+
+    footer {
+        div {
+            gap: 2px;
+
+            p {
+                font-size: 16px;
+                margin: 5px;
+            }
+
+            a {
+                i {
+                    font-size: 23px;
+                }
+            }
+
+            .iconos-copa {
+                font-size: 23px;
             }
         }
     }

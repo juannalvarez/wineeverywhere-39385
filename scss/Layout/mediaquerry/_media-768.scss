@@ -124,15 +124,14 @@
         }
 
         .imagenes-nosotros {
+            padding-top: 10px;
             grid-column: 2/5;
             grid-row: 4/8;
+            
 
             .vino-nosotros {
                 width: 100%;
                 border-radius: 8px;
-                // &:hover{
-                //     scale: 1.05; PARA DESKTOP
-                // }
             }
 
             .viñedo-nosotros {
@@ -196,6 +195,27 @@
             }
         }
     }
+    footer {
+        div {
+            gap: 5px;
+            p {
+                display: block;
+                color: #DBD8BB;
+                text-decoration: none;
+                font-family: 'Lexend';
+                font-style: normal;
+                font-size: 12px;
+            }
+            a {
+                i {
+                    font-size: 18px;
+                }
+            }
+            .iconos-copa{
+                font-size: 18px;
+            }
+        }
+    }
 }
 
 
@@ -229,20 +249,3 @@
 
 
 
-    .footer-flex {
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-        justify-content: space-between;
-        gap: 5px;
-
-        p {
-            display: block;
-            color: #DBD8BB;
-            text-decoration: none;
-            font-family: 'Lexend';
-            font-style: normal;
-            font-size: 10px;
-            margin: 5px;
-        }
-    }
